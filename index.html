@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasindu S Dissanayaka | Portfolio</title>
+    <meta name="description" content="Personal portfolio bridging IT/Software Development and UI/UX Graphic Design.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700;900&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Dynamic Cursor -->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <!-- Background Mesh Gradient -->
+    <div class="mesh-bg"></div>
+
+    <nav class="glass-nav">
+        <div class="nav-content">
+            <div class="logo">Port<span>folio</span></div>
+            <ul class="nav-links">
+                <li><a href="#home" class="magnetic-btn">Home</a></li>
+                <li><a href="#about" class="magnetic-btn">About</a></li>
+                <li><a href="#projects" class="magnetic-btn">Projects</a></li>
+                <li><a href="#contact" class="magnetic-btn">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="typewriter"></span><span class="cursor">|</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Hi, I'm <strong style="color: var(--text-primary)">Hasindu S Dissanayaka</strong>. I am an IT professional and UI/UX designer pursuing a Bachelor of Information Technology, blending robust system architecture with pixel-perfect design.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn primary-btn magnetic-btn">View My Work</a>
+                    <a href="#contact" class="btn secondary-btn magnetic-btn">Let's Connect</a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="floating-element 3d-card" data-tilt>
+                    <div class="glass-panel" style="padding: 20px;">
+                        <img src="images/hero_3d_image.jpeg" class="hero-image-insert" alt="Hero 3D Component">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section slide-up">
+            <h2 class="section-title">About <span>Me</span></h2>
+            <div class="about-content">
+                <div class="about-image-container">
+                    <div class="about-image glitch">
+                        <img src="images/profile.jpeg" alt="Hasindu Dissanayaka Portrait">
+                    </div>
+                    <div class="glitch-overlay"></div>
+                </div>
+                <div class="about-text">
+                    <p>
+                        I'm passionate about the intersection of backend logic and frontend aesthetics. As an IT
+                        professional pursuing a Bachelor of Information Technology, I build robust system architectures
+                        while maintaining a sharp eye for pixel-perfect UI/UX design.
+                    </p>
+                    <p>
+                        Beyond coding, my interests extend into computer hardware, advanced AI video generation, and
+                        creating striking photographic concepts. I believe that visually compelling designs are
+                        meaningless without solid engineering to support them, and vice versa.
+                    </p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <h3>IT</h3>
+                            <span>Infrastructure & Logic</span>
+                        </div>
+                        <div class="stat-item">
+                            <h3>UX</h3>
+                            <span>User-Centric Design</span>
+                        </div>
+                        <div class="stat-item">
+                            <h3>AI</h3>
+                            <span>Creative Workflows</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Marquee Section -->
+        <section class="skills-section">
+            <div class="marquee-container">
+                <div class="marquee-content">
+                    <span class="skill-pill"><i class="fa-solid fa-pen-nib"></i> UI/UX Design</span>
+                    <span class="skill-pill"><i class="fa-brands fa-figma"></i> Figma</span>
+                    <span class="skill-pill"><i class="fa-solid fa-image"></i> Image Editing</span>
+                    <span class="skill-pill"><i class="fa-solid fa-code"></i> Frontend</span>
+                    <span class="skill-pill"><i class="fa-solid fa-server"></i> System Architecture</span>
+                    <span class="skill-pill"><i class="fa-solid fa-database"></i> Database</span>
+                    <span class="skill-pill"><i class="fa-solid fa-robot"></i> AI Prompt Engineering</span>
+
+                    <span class="skill-pill"><i class="fa-solid fa-pen-nib"></i> UI/UX Design</span>
+                    <span class="skill-pill"><i class="fa-brands fa-figma"></i> Figma</span>
+                    <span class="skill-pill"><i class="fa-solid fa-image"></i> Image Editing</span>
+                    <span class="skill-pill"><i class="fa-solid fa-code"></i> Frontend</span>
+                    <span class="skill-pill"><i class="fa-solid fa-server"></i> System Architecture</span>
+                    <span class="skill-pill"><i class="fa-solid fa-database"></i> Database</span>
+                    <span class="skill-pill"><i class="fa-solid fa-robot"></i> AI Prompt Engineering</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section slide-up">
+            <h2 class="section-title">Featured <span>Projects</span></h2>
+            <div class="projects-grid masonry">
+                <div class="project-card glass-panel" data-tilt>
+                    <div class="project-thumb">
+                        <img src="images/file_management_dashboard.png" alt="File Management System">
+                    </div>
+                    <div class="project-info">
+                        <h3>File & Procurement Mgt.</h3>
+                        <p>Comprehensive dashboard streamlining supply division workflows and documentation.</p>
+                        <div class="tags">
+                            <span class="tag">IT</span>
+                            <span class="tag">Web App</span>
+                            <span class="tag">Database</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card glass-panel" data-tilt>
+                    <div class="project-thumb">
+                        <img src="images/finance_app_ui.png" alt="Finance App UI">
+                    </div>
+                    <div class="project-info">
+                        <h3>Personal Finance App</h3>
+                        <p>UI/UX design and logical structuring of a money management application.</p>
+                        <div class="tags">
+                            <span class="tag">UI/UX</span>
+                            <span class="tag">Mobile App</span>
+                            <span class="tag">Finance</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card glass-panel" data-tilt>
+                    <div class="project-thumb">
+                        <img src="images/ai_creative_visuals.png" alt="AI Generated Visuals">
+                    </div>
+                    <div class="project-info">
+                        <h3>Creative Visuals & AI</h3>
+                        <p>Generated and heavily edited photographic concepts using Veo3 and advanced editors.</p>
+                        <div class="tags">
+                            <span class="tag">Graphic Design</span>
+                            <span class="tag">AI</span>
+                            <span class="tag">Photography</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section slide-up">
+            <h2 class="section-title">Let's <span>Connect</span></h2>
+            <div class="contact-container">
+                <form class="contact-form glass-panel">
+                    <div class="form-group floating-label">
+                        <input type="text" id="name" required placeholder=" ">
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="form-group floating-label">
+                        <input type="email" id="email" required placeholder=" ">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="form-group floating-label">
+                        <textarea id="message" required rows="5" placeholder=" "></textarea>
+                        <label for="message">Message</label>
+                    </div>
+                    <button type="submit" class="btn primary-btn magnetic-btn">Send Message</button>
+                </form>
+
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p>Interested in collaborating or have a project in mind? Feel free to reach out. I'm always open to
+                        discussing new opportunities combining IT architecture and UI/UX design.</p>
+
+                    <div class="social-links">
+                        <a href="https://api.whatsapp.com/message/XRLKKXIDNNDLC1?autoload=1&app_absent=0"
+                            target="_blank" rel="noopener noreferrer" class="social-icon magnetic-btn"
+                            title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.facebook.com/share/1ENeXHbB6E/" target="_blank" rel="noopener noreferrer"
+                            class="social-icon magnetic-btn" title="Facebook"><i
+                                class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://linkedin.com/in/hasindu-s-dissanayaka-1bb013373?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                            target="_blank" rel="noopener noreferrer" class="social-icon magnetic-btn"
+                            title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/Hasindusdissanayaka" target="_blank" rel="noopener noreferrer"
+                            class="social-icon magnetic-btn" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="site-footer">
+            <p>&copy; 2026 Hasindu Dissanayaka. All Rights Reserved.</p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
