@@ -6,6 +6,8 @@ let outlineX = 0;
 let outlineY = 0;
 
 window.addEventListener("mousemove", function (e) {
+    if (window.matchMedia("(hover: none) and (pointer: coarse)").matches) return;
+    
     mouseX = e.clientX;
     mouseY = e.clientY;
     
@@ -166,4 +168,33 @@ document.addEventListener('DOMContentLoaded', () => {
             btn.style.transform = `translate(0px, 0px)`;
         });
     });
+
+    // Mobile Menu Toggle
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navLinksList = document.querySelector('.nav-links');
+    const navItems = document.querySelectorAll('.nav-links a');
+
+    if (mobileMenu) {
+        mobileMenu.addEventListener('click', () => {
+            navLinksList.classList.toggle('active');
+            const icon = mobileMenu.querySelector('i');
+            if (navLinksList.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            } else {
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            }
+        });
+        
+        // Close menu when clicking a link
+        navItems.forEach(item => {
+            item.addEventListener('click', () => {
+                navLinksList.classList.remove('active');
+                const icon = mobileMenu.querySelector('i');
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            });
+        });
+    }
 });
